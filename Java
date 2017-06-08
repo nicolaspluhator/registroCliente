@@ -33,7 +33,7 @@
 	document.write(auto["Color"]);
 	/*
 	function myAlert (){
-		alert("Haga click en añadir extencion xdxdxd");
+		alert("Haga click en añadir extencion!");
 	}
 	setInterval(myAlert,3000);
 	
