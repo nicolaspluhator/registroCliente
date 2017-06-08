@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Ejemplo uso de objetos</title>
+<style type="text/css">
+	h1 { font-family:Georgia; color:#0000CC; text-align:center;	font-size:large}
+	body{ font-family:Arial; color:#999999}
+</style>
+</head>
+<body>
+<h1>Bienvenido a la p&aacute;gina!</h1>
+<br/>
+<script>
+	
+	//Definir un objeto de manera a Array
+	var auto =[];
+	auto["Marca"]="Citroen";
+	auto["Color"]="Bordo";
+
+	//Definir un objeto como funcion. En javascript no posee clases asi que se hace de esta manera
+	function Persona(nombre, ape,año) {
+		this.nombre= nombre;
+		this.apellido= ape;
+		this.anio= año;
+		this.edad= calcularEdad(this.anio);	
+	}
+
+	function calcularEdad (aaaa){
+		return 2017 - aaaa;
+	}
+
+	var p1 = new Persona("Nicolas","Pluhator",1996);
+	document.write(p1.nombre + "Edad: " + p1.edad);
+	document.write(auto["Color"]);
+	/*
+	function myAlert (){
+		alert("Haga click en añadir extencion xdxdxd");
+	}
+	setInterval(myAlert,3000);
+	
+	//Esta funcion imprime la hora cada un segundo a travez de la funcion innerHTML.
+	function imprimirHora(){
+		var d = new Date();
+		var hora = d.getHours();
+		var minu = d.getMinutes();
+		var secon= d.getSeconds();
+		document.body.innerHTML = hora+":"+minu+":"+secon;
+	}
+	setInterval(imprimirHora,1000);*/
+</script>
+</body>
+</html>
