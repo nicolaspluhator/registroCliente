@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Ejemplo uso de objetos</title>
+<title>Ejemplo uso sdde objetos</title>
 <style type="text/css">
 	h1 { font-family:Georgia; color:#0000CC; text-align:center;	font-size:large}
 	body{ font-family:Arial; color:#999999}
